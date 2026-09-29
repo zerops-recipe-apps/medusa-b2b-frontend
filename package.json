@@ -1,5 +1,5 @@
 {
-  "name": "medusa-b2b-nextstore",
+  "name": "medusa-b2b-frontend",
   "version": "1.0.3",
   "private": true,
   "author": "Zerops",
@@ -7,7 +7,7 @@
   "description": "Medusa v2.21 B2B Next.js 15 App Router storefront for Zerops (Node SSR).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zerops-recipe-apps/medusa-b2b-nextstore.git"
+    "url": "https://github.com/zerops-recipe-apps/medusa-b2b-frontend.git"
   },
   "homepage": "https://github.com/zerops-recipe-apps/medusa-b2b",
   "bugs": {

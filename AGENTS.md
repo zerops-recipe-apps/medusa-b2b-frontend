@@ -1,4 +1,4 @@
-# medusa-b2b-nextstore
+# medusa-b2b-frontend
 
 Next.js 15 B2B storefront (Yarn 3 Berry). Pairs with [medusa-b2b](https://github.com/zerops-recipe-apps/medusa-b2b).
 
