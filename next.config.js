@@ -7,6 +7,15 @@ checkEnvVariables()
  */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_MEDUSA_BACKEND_URL:
+      process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || process.env.API_URL || "",
+    NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY:
+      process.env.NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY ||
+      process.env.MEDUSA_PUBLISHABLE_KEY ||
+      process.env.CHANNEL_PUBLISHABLE_KEY ||
+      "",
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
