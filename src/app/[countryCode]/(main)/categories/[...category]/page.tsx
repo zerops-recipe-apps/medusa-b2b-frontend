@@ -6,6 +6,7 @@ import { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 export const dynamicParams = true
+export const dynamic = "force-dynamic"
 
 type Props = {
   params: Promise<{ category: string[]; countryCode: string }>
@@ -38,6 +39,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
+  try {
   const countryCodes = await listRegions().then(
     (regions) =>
       regions
@@ -60,6 +62,9 @@ export async function generateStaticParams() {
       }))
     )
     .flat()
+  } catch {
+    return []
+  }
 }
 
 export default async function CategoryPage(props: Props) {
